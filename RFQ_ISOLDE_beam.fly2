@@ -1,7 +1,7 @@
 particles {
   coordinates = 0,
   standard_beam {
-    n = 10,
+    n = 1,
     tob = gaussian_distribution {
       mean = 10,
       fwhm = 1
