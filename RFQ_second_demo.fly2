@@ -1,0 +1,32 @@
+particles {
+  coordinates = 0,
+  standard_beam {
+    n = 10,
+    tob = gaussian_distribution {
+      mean = 10,
+      fwhm = 1
+    },
+    mass = 100,
+    charge = 1,
+    x = gaussian_distribution {
+      mean = 0,
+      fwhm = 0.4
+    },
+    y = gaussian_distribution {
+      mean = 0,
+      fwhm = 0.4
+    },
+    z = 0.1,
+    ke = gaussian_distribution {
+      mean = 1.8,
+      fwhm = 0.5
+    },
+    cwf = 1,
+    color = 3,
+    direction = cone_direction_distribution {
+      axis = vector(0, 0, 1),
+      half_angle = 2,
+      fill = true
+    }
+  }
+}
